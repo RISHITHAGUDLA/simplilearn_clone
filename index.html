@@ -1,0 +1,759 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Simplilearn</title>
+    <link rel="icon" type="image/x-icon" href="fav.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <style>
+        .btn-bg-primary {
+            background-color: #118aef;
+            color: whitesmoke;
+        }
+
+        .text-bg-primary {
+            background-color: #118aef;
+            color: whitesmoke;
+        }
+
+        .container {
+            max-width: 70%;
+            max-height: 60%;
+            position: relative;
+        }
+
+        .car_div {
+            /* border-style: solid;
+        border-color:  yellow; */
+            padding-top: 10px;
+            padding-left: 10px;
+            position: absolute;
+            top: 140px;
+            left: 80px;
+            color: #FFFFFF;
+            height: 278px;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .comp_flex {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        .card-title {
+            font-size: 18px;
+        }
+
+        .card-bg {
+            background-color: rgb(27, 25, 25);
+        }
+
+        .card-title-color {
+            color: rgb(229, 237, 237);
+        }
+
+        .card-text-color {
+            color: #b7b4b4
+        }
+
+        .form-control::placeholder {
+            color: #118aef;
+        }
+    </style>
+</head>
+
+<body>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <nav class="navbar navbar-expand-lg bg-body-secondary">
+        <div class="container-fluid justify-content-end">
+
+            <div id="navbarSupportedContent ">
+                <ul class=" nav-underline navbar-nav me-auto mb-lg-0 ">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.simplilearn.com/resources">Resources</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.simplilearn.com/business">Simplilearn for Business</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.simplilearn.com/become-our-trainer">Become an
+                            instructor</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.simplilearn.com/simplirecruit">Hire from us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.simplilearn.com/reviews">Reviews</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class=" navbar navbar-expand g-body-white ">
+        <div class="d-flex justify-content-md-evenly mx-auto" style="width:90%">
+
+            <div class="col-md-2"><a class="navbar-brand" href="#"><img src="download.png" height="90%" width="70%"></a>
+            </div>
+            <div class="col-md-1">
+                <ul class="navbar-nav mb-0 mb-lg-0">
+
+                    <li class="nav-item dropdown">
+                        <a class="btn btn-bg-primary dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            All Courses
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#"><strong>COURSE CATEGORIES</strong></a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="https://www.simplilearn.com/masters-in-artificial-intelligence">AI & Machine Learning</a></li>
+                            <li><a class="dropdown-item" href="https://www.simplilearn.com/big-data-and-analytics/python-for-data-science-training">Data Science & Business Analytics</a></li>
+                            <li><a class="dropdown-item" href="https://www.simplilearn.com/cyber-security/ceh-certification">Cyber Security</a></li>
+                            <li><a class="dropdown-item" href="https://www.simplilearn.com/cloud-computing/aws-solution-architect-associate-training">Cloud Computing</a></li>
+                            <li><a class="dropdown-item" href="https://www.simplilearn.com/project-management/pmp-certification-training">Project Management</a></li>
+                            <li><a class="dropdown-item" href="https://www.simplilearn.com/devops-engineer-masters-program-certification-training">DevOps</a></li>
+                            <li><a class="dropdown-item" href="https://www.simplilearn.com/big-data-and-analytics/big-data-and-hadoop-training">BigData</a></li>
+
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-5">
+                <input class="form-control" type="search" placeholder="What do you want to learn"
+                    style="border-color:#118aef">
+            </div>
+            <div class="col-md-2"></div>
+            <div class="col-md-1">
+                <a href="https://accounts.simplilearn.com/user/login" style="text-decoration: none;"> <button
+                        class="btn btn-outline-primary" type="submit">Login</button></a>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <div class="container-fluid" style="background-color: #f8fbff;">
+        <div class="container">
+            <div id="carouselExampleIndicators" class="carousel slide carousel-fade">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                        class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="sim_1.png" class="d-block w-100" alt="...">
+                        <div class="car_div">
+                            <h1 style="font-size: 45px;">World's #1<br> Online Bootcamp</h1>
+                            <p style="font-size: 19px;"><br>5,000,000 careers advanced<br>
+                                1,500 live classes every month<br>
+                                85% report career benefits including promotion or a new job</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="sim_2.png" class="d-block w-100" alt="...">
+                        <div class="car_div">
+                            <h1 style="font-size: 45px;">World's #1<br> Online Bootcamp</h1>
+                            <p style="font-size: 19px;"><br>5,000,000 careers advanced<br>
+                                1,500 live classes every month<br>
+                                85% report career benefits including promotion or a new job</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="sim_3.png" class="d-block w-100" alt="...">
+                        <div class="car_div">
+                            <h1 style="font-size: 45px;">World's #1<br> Online Bootcamp</h1>
+                            <p style="font-size: 19px;"><br>5,000,000 careers advanced<br>
+                                1,500 live classes every month<br>
+                                85% report career benefits including promotion or a new job</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="toast show align-items-center position-relative" style="background-color: rgb(189, 190, 191);"
+        role="alert" aria-live="assertive" aria-atomic="true">
+        <div class="d-flex">
+            <div class="toast-body">
+                Hello there! Have a great learning.
+            </div>
+            <button type="button" class="btn-close me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+        </div>
+    </div>
+
+
+
+    <div class="container-fluid text-center m-5">
+        <p style="font-size: 17px;" class="text-dark-emphasis">Partnering with world's leading universities and
+            companies</p>
+        <div class="d-flex justify-content-center text-center">
+            <div class="img-fluid me-4"><img
+                    src="https://www.freepnglogos.com/uploads/ibm-logo-png/ibm-logo-lusha-lead-enrichment-click-direct-dials-and-13.png"
+                    height="30" width="70"></div>
+            <div class="img-fluid me-1 "><img
+                    src="https://www.freepnglogos.com/uploads/microsoft-logo-png-transparent-background-1.png"
+                    height="30" width="80"></div>
+            <div class=" img-fluid"><img src="log_5.png" height="50" width="120"></div>
+            <div class=""><img src="log_1.png" height="50" width="150"></div>
+            <div class=""><img src="log_2.png" height="50" width="200"></div>
+            <div class=""><img src="log_3.png" height="50" width="150"></div>
+            <div class=""><img src="log_4.png" height="50" width="200"></div>
+
+        </div>
+    </div>
+</body>
+
+
+<div class="container-fluid mt-5 p-5 bg-clr " style="background-color: #f9f7f7;">
+    <div class="container m-3">
+        <h2 style="font-size: 40px; font-family: Garamond,serif;">Get Certified, Get Ahead with Our Programs</h2>
+        <br>
+        <h3>Post Graduate Programs</h3>
+        <p style="font-size: 17px;">Learn from global experts and get certified by the world's leading universities</p>
+        <br>
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    <div id="carouselExampleDark" class="carousel carousel-dark slide" style="background-color:#f9f7f7">
+        
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+
+                <div class="d-flex justify-content-around mx-auto" style="width:85%">
+                    <div class="card shadow" aria-hidden="true" style="width: 20rem;">
+                        <img src="bui_.jpg" class="object-fit-fill card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title placeholder-glow">Executive Certificate Program in General Management
+                            </h5>
+                            <p class="card-text placeholder-glow"><svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                                    viewBox="0 0 448 512">
+                                    <style>
+                                        svg {
+                                            fill: #b7b4b4
+                                        }
+                                    </style>
+                                    <path
+                                        d="M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H64C28.7 64 0 92.7 0 128v16 48V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V192 144 128c0-35.3-28.7-64-64-64H344V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H152V24zM48 192H400V448c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V192z" />
+                                </svg>&nbsp;&nbsp;6 months</p>
+                            <p class="card-text placeholder-glow"><svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                                    viewBox="0 0 512 512">
+                                    <style>
+                                        svg {
+                                            fill: #b7b4b4
+                                        }
+                                    </style>
+                                    <path
+                                        d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z" />
+                                </svg>&nbsp;&nbsp;Cohort Starts: 20 Jun, 2023</p>
+                            <a class="navbar-brand placeholder-glow" style=" font-size: 20px;"
+                                href="https://www.iimidr.ac.in/">IIM INDORE</a>
+                        </div>
+                    </div>
+
+                    <div class="shadow card" aria-hidden="true" style="width: 20rem;">
+                        <img src="bui_1.jpg" class="object-fit-fill card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title placeholder-glow">Professional Certificate Course in Data Science</h5>
+                            <p class="card-text placeholder-glow"><svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                                    viewBox="0 0 448 512">
+                                    <style>
+                                        svg {
+                                            fill: #b7b4b4
+                                        }
+                                    </style>
+                                    <path
+                                        d="M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H64C28.7 64 0 92.7 0 128v16 48V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V192 144 128c0-35.3-28.7-64-64-64H344V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H152V24zM48 192H400V448c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V192z" />
+                                </svg>&nbsp;&nbsp;11 months</p>
+                            <p class="card-text placeholder-glow"><svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                                    viewBox="0 0 512 512">
+                                    <style>
+                                        svg {
+                                            fill: #b7b4b4
+                                        }
+                                    </style>
+                                    <path
+                                        d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z" />
+                                </svg>&nbsp;&nbsp;Cohort Starts: 20 Jun, 2023</p>
+                            <a class="navbar-brand placeholder-glow" style=" font-size: 20px;"
+                                href="https://www.iitk.ac.in/">IIT KANPUR</a>
+                        </div>
+                    </div>
+
+                    <div class="shadow card" aria-hidden="true" style="width: 20rem;">
+                        <img src="bui_2.jpg" height="210" class="object-fit-COVER card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title placeholder-glow">Post Graduate Program in Cloud Computing</h5>
+                            <p class="card-text placeholder-glow"><svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                                    viewBox="0 0 448 512">
+                                    <style>
+                                        svg {
+                                            fill: #b7b4b4
+                                        }
+                                    </style>
+                                    <path
+                                        d="M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H64C28.7 64 0 92.7 0 128v16 48V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V192 144 128c0-35.3-28.7-64-64-64H344V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H152V24zM48 192H400V448c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V192z" />
+                                </svg>&nbsp;&nbsp;11 months</p>
+                            <p class="card-text placeholder-glow"><svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                                    viewBox="0 0 512 512">
+                                    <style>
+                                        svg {
+                                            fill: #b7b4b4
+                                        }
+                                    </style>
+                                    <path
+                                        d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z" />
+                                </svg>&nbsp;&nbsp;Cohort Starts: 07 Jun, 2023</p>
+                            <a class="navbar-brand placeholder-glow" style=" font-size: 20px;"
+                                href="https://www.caltech.edu/">CALTECH</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="carousel-item">
+                <div class="d-flex justify-content-around mx-auto" style="width:85%">
+                    <div class="card shadow" aria-hidden="true" style="width: 20rem;">
+                        <img src="IIITB.jpg" class="object-fit-fill card-img-top" alt="..."height="210">
+                        <div class="card-body">
+                            <h5 class="card-title placeholder-glow">Advanced Certification in UI UX Design</h5>
+                            <p class="card-text placeholder-glow"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><style>svg{fill:#b7b4b4}</style><path d="M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H64C28.7 64 0 92.7 0 128v16 48V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V192 144 128c0-35.3-28.7-64-64-64H344V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H152V24zM48 192H400V448c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V192z"/></svg>&nbsp;&nbsp;5 months</p>
+                            <p class="card-text placeholder-glow"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><style>svg{fill:#b7b4b4}</style><path d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"/></svg>&nbsp;&nbsp;Cohort Starts: 21 Jun, 2023</p>
+                            <a class="navbar-brand placeholder-glow" style=" font-size: 20px;" href="https://www.iiitb.ac.in//">IIIT BANGLORE</a>
+                        </div>
+                    </div>
+            
+                    <div class="shadow card" aria-hidden="true" style="width: 20rem;">
+                        <img src="ROOR.jpg" class="object-fit-fill card-img-top" alt="..." height="210">
+                        <div class="card-body">
+                            <h5 class="card-title placeholder-glow">Professional Certificate Course in Data Analytics</h5>
+                            <p class="card-text placeholder-glow"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><style>svg{fill:#b7b4b4}</style><path d="M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H64C28.7 64 0 92.7 0 128v16 48V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V192 144 128c0-35.3-28.7-64-64-64H344V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H152V24zM48 192H400V448c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V192z"/></svg>&nbsp;&nbsp;11 months</p>
+                            <p class="card-text placeholder-glow"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><style>svg{fill:#b7b4b4}</style><path d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"/></svg>&nbsp;&nbsp;Cohort Starts: 15 Jun, 2023</p>
+                            <a class="navbar-brand placeholder-glow" style=" font-size: 20px;" href="https://www.iitr.ac.in/">IIT ROORKEE</a>
+                        </div>
+                    </div>
+            
+                    <div class="shadow card" aria-hidden="true" style="width: 20rem;">
+                        <img src="bui_2.jpg" height="210" class="object-fit-COVER card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title placeholder-glow">Caltech Post Graduate Program in AI and Machine Learning</h5>
+                            <p class="card-text placeholder-glow"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><style>svg{fill:#b7b4b4}</style><path d="M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H64C28.7 64 0 92.7 0 128v16 48V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V192 144 128c0-35.3-28.7-64-64-64H344V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H152V24zM48 192H400V448c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V192z"/></svg>&nbsp;&nbsp;11 months</p>
+                            <p class="card-text placeholder-glow"><svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><style>svg{fill:#b7b4b4}</style><path d="M464 256A208 208 0 1 1 48 256a208 208 0 1 1 416 0zM0 256a256 256 0 1 0 512 0A256 256 0 1 0 0 256zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"/></svg>&nbsp;&nbsp;Cohort Starts: 15 Jun, 2023</p>
+                            <a class="navbar-brand placeholder-glow" style=" font-size: 20px;" href="https://www.caltech.edu/">CALTECH</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div><br><br>
+
+
+
+
+
+
+
+
+    <div class="container m-3">
+        <h3>Master's Programs</h3>
+        <p style="font-size: 17px;">Achieve your career goals with industry-recognized learning paths</p>
+        <br>
+    </div>
+    <div class="d-flex justify-content-around">
+        <div class="shadow card" aria-hidden="true" style="width: 20rem;">
+            <div class="card-header" style="height: 60px;background-color: #FBCFCD;"></div>
+            <div class="card-body">
+                <h5 class="card-title placeholder-glow">Full Stack Java Developer Career Bootcamp</h5>
+                <p class="card-text placeholder-glow"><svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                        viewBox="0 0 448 512">
+                        <style>
+                            svg {
+                                fill: #b7b4b4
+                            }
+                        </style>
+                        <path
+                            d="M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H64C28.7 64 0 92.7 0 128v16 48V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V192 144 128c0-35.3-28.7-64-64-64H344V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H152V24zM48 192H400V448c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V192z" />
+                    </svg>&nbsp;&nbsp;11 Months |&nbsp;&nbsp; <svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                        viewBox="0 0 448 512">
+                        <style>
+                            svg {
+                                fill: #b7b4b4
+                            }
+                        </style>
+                        <path
+                            d="M96 0C43 0 0 43 0 96V416c0 53 43 96 96 96H384h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V384c17.7 0 32-14.3 32-32V32c0-17.7-14.3-32-32-32H384 96zm0 384H352v64H96c-17.7 0-32-14.3-32-32s14.3-32 32-32zm32-240c0-8.8 7.2-16 16-16H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16zm16 48H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16s7.2-16 16-16z" />
+                    </svg>&nbsp;&nbsp;12 Courses</p>
+                <p class="placeholder-glow" style="font-size: 14px;">▸Simplilearn Career Bootcamp<br>▸7 Tools and 4
+                    Industry Projects<br>▸Master's Certificate</p>
+            </div>
+        </div>
+
+        <div class="shadow card" aria-hidden="true" style="width: 20rem;">
+            <div class="card-header" style="height: 60px;background-color:#b9c0b4"></div>
+            <div class="card-body">
+                <h5 class="placeholder-glow card-title">Data Science Career Bootcamp</h5>
+                <p class="card-text placeholder-glow"><svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                        viewBox="0 0 448 512">
+                        <style>
+                            svg {
+                                fill: #b7b4b4
+                            }
+                        </style>
+                        <path
+                            d="M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H64C28.7 64 0 92.7 0 128v16 48V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V192 144 128c0-35.3-28.7-64-64-64H344V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H152V24zM48 192H400V448c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V192z" />
+                    </svg>&nbsp;&nbsp;8 Months |&nbsp;&nbsp;<svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                        viewBox="0 0 448 512">
+                        <style>
+                            svg {
+                                fill: #b7b4b4
+                            }
+                        </style>
+                        <path
+                            d="M96 0C43 0 0 43 0 96V416c0 53 43 96 96 96H384h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V384c17.7 0 32-14.3 32-32V32c0-17.7-14.3-32-32-32H384 96zm0 384H352v64H96c-17.7 0-32-14.3-32-32s14.3-32 32-32zm32-240c0-8.8 7.2-16 16-16H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16zm16 48H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16s7.2-16 16-16z" />
+                    </svg>&nbsp;&nbsp; 9 Courses</p>
+                <p class="placeholder-glow" style="font-size:14px;">▸Simplilearn Career Bootcamp<br>▸9 Tools and 6
+                    Industry Projects<br>
+                    ▸Master's Certificate</p>
+            </div>
+        </div>
+
+        <div class="shadow card" aria-hidden="true" style="width: 20rem;">
+            <div class="card-header" style="height: 60px;background-color:#C9DFEC"></div>
+            <div class="card-body">
+                <h5 class="card-title placeholder-glow">Digital Marketing Specialist</h5>
+                <p class="card-text placeholder-glow"><svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                        viewBox="0 0 448 512">
+                        <style>
+                            svg {
+                                fill: #b7b4b4
+                            }
+                        </style>
+                        <path
+                            d="M152 24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H64C28.7 64 0 92.7 0 128v16 48V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V192 144 128c0-35.3-28.7-64-64-64H344V24c0-13.3-10.7-24-24-24s-24 10.7-24 24V64H152V24zM48 192H400V448c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V192z" />
+                    </svg>&nbsp;&nbsp;11 Months |&nbsp;&nbsp;<svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                        viewBox="0 0 448 512">
+                        <style>
+                            svg {
+                                fill: #b7b4b4
+                            }
+                        </style>
+                        <path
+                            d="M96 0C43 0 0 43 0 96V416c0 53 43 96 96 96H384h32c17.7 0 32-14.3 32-32s-14.3-32-32-32V384c17.7 0 32-14.3 32-32V32c0-17.7-14.3-32-32-32H384 96zm0 384H352v64H96c-17.7 0-32-14.3-32-32s14.3-32 32-32zm32-240c0-8.8 7.2-16 16-16H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16zm16 48H336c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16s7.2-16 16-16z" />
+                    </svg>&nbsp;&nbsp; 14 Courses</p>
+                <p class="placeholder-glow" style="font-size:14px;">▸Simplilearn JobAssist Program <br>▸29 Tools and
+                    Rigorous curicculum<br>
+                    ▸Certificate Alignment</p>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+<div class="container-fluid" style="background-color:rgb(238, 242, 245) ;">
+    <div class="container m-5 mt-0">
+        <br>
+        <p>Our Online Bootcamp</p>
+        <h2 style="font-size: 40px; font-family: Garamond,serif;">An immersive learning experience</h2>
+    </div>
+    <div class="d-flex justify-content-around">
+
+        <div class="card border-0" style="width: 18rem;background-color:rgb(238, 242, 245) ;">
+            <div class="card-body">
+
+                <h5 class="card-title">Develop skills for real career growth</h5>
+                <p class="card-text">Cutting-edge curriculum designed in guidance with industry and academia to develop
+                    job-ready skills</p>
+            </div>
+        </div>
+
+
+
+        <div class="card border-0" style="width: 18rem;background-color:rgb(238, 242, 245) ;">
+            <div class="card-body">
+                <h5 class="card-title">Learn by working on real-world problems</h5>
+                <p class="card-text">Capstone projects involving real world data sets with virtual labs for hands-on
+                    learning</p>
+            </div>
+        </div>
+
+
+
+        <div class="card border-0" style="width: 18rem;background-color:rgb(238, 242, 245) ;">
+            <div class="card-body">
+                <h5 class="card-title">Learn from experts active in their field, not out-of-touch trainers</h5>
+                <p class="card-text"></p>Leading practitioners who bring current best practices and case studies to
+                sessions that fit into your work schedule.</p>
+            </div>
+        </div>
+
+
+
+
+        <div class="card border-0" style="width: 18rem;background-color:rgb(238, 242, 245) ;">
+            <div class="card-body">
+                <h5 class="card-title">Structured guidance ensuring learning never stops</h5>
+                <p class="card-text">24x7 Learning support from mentors and a community of like-minded peers to resolve
+                    any conceptual doubts</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid" style="background-color: rgb(27, 25, 25); color:rgb(229, 237, 237)"><br>
+    <div class="d-flex justify-content-md-evenly flex-wrap">
+
+        <div class="col-md-auto">
+            <div class="card card-bg border-0" style="width: 12rem;">
+                <div class="card-body">
+                    <h5 class="card-title card-title-color">Follow Us!</h5>
+                    <a href="https://www.simplilearn.com/refer-and-earn" class="btn btn-outline-light btn-sm">Refer and
+                        Earn</a>
+                    <br>
+                    <p class="card-text card-text-color">&nbsp; <svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                            viewBox="0 0 320 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                            <style>
+                                svg {
+                                    fill: #b7b4b4
+                                }
+                            </style>
+                            <path
+                                d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z" />
+                        </svg>&nbsp;&nbsp;&nbsp;<svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                            viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                            <style>
+                                svg {
+                                    fill: #b7b4b4
+                                }
+                            </style>
+                            <path
+                                d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z" />
+                        </svg>&nbsp;&nbsp;&nbsp;<svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                            viewBox="0 0 576 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                            <style>
+                                svg {
+                                    fill: #b7b4b4
+                                }
+                            </style>
+                            <path
+                                d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z" />
+                        </svg><br>&nbsp;<svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                            viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                            <style>
+                                svg {
+                                    fill: #b7b4b4
+                                }
+                            </style>
+                            <path
+                                d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83.5 0 53.8a53.79 53.79 0 0 1 107.58 0c0 29.7-24.1 54.3-53.79 54.3zM447.9 448h-92.68V302.4c0-34.7-.7-79.2-48.29-79.2-48.29 0-55.69 37.7-55.69 76.7V448h-92.78V148.9h89.08v40.8h1.3c12.4-23.5 42.69-48.3 87.88-48.3 94 0 111.28 61.9 111.28 142.3V448z" />
+                        </svg>&nbsp;&nbsp;&nbsp;<svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                            viewBox="0 0 488 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                            <style>
+                                svg {
+                                    fill: #b7b4b4
+                                }
+                            </style>
+                            <path
+                                d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z" />
+                        </svg>&nbsp;&nbsp;&nbsp;<svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                            viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                            <style>
+                                svg {
+                                    fill: #b7b4b4
+                                }
+                            </style>
+                            <path
+                                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                        </svg></p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-md-auto">
+            <div class="card card-bg border-0" style="width: 12rem;">
+                <div class="card-body">
+                    <h5 class="card-title card-title-color">Company</h5>
+                    <p class="card-text card-text-color">About us<br>Careers <br>Newsroom <br>Alumni Speak<br> Grievance
+                        Redressal<br> Contact us</p>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="col-md-auto">
+            <div class="card card-bg border-0" style="width: 12rem;">
+                <div class="card-body">
+                    <h5 class="card-title card-title-color">Work with us</h5>
+                    <p class="card-text card-text-color">Become an instructor<br>Blog as guest</p>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="col-md-auto">
+            <div class="card card-bg border-0" style="width: 12rem;">
+                <div class="card-body">
+                    <h5 class="card-title card-title-color">Discover</h5>
+                    <p class="card-text card-text-color">Skillup<br>Skillup Sitemap <br>Resources <br>RSS feed<br> City
+                        CitemapS</p>
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <div class="col-md-auto">
+            <div class="card card-bg border-0" style="width: 12Srem;">
+                <div class="card-body">
+                    <h5 class="card-title card-title-color">For Businesses</h5>
+                    <p class="card-text card-text-color">Corporate Training<br>Partners<br>Digital Transformation</p>
+                    <p>Digi</p>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="col-md-auto"></div>
+        <div class="card card-bg border-0" style="width: 12rem;">
+            <div class="card-body">
+                <h5 class="card-title card-title-color">Learn On the Go!</h5>
+                <!-- <p class="card-text card-text-color"></p> -->
+                <div class="card card-textS" style="width: 12rem;">
+                    <ul class="list-group list-group-flush ">
+                        <li class="list-group-item border card-bg card-text-color"><a
+                                href="https://play.google.com/store/apps/details?id=com.mobile.simplilearn"
+                                class="card-text-color" style="text-decoration: none;">Get the Android App</a></li>
+                        <li class="list-group-item border card-bg card-text-color"><a
+                                href="https://apps.apple.com/app/simplilearn/id963042747?ls=1" class="card-text-color"
+                                style="text-decoration: none;">Get the iOS App</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div><br>
+    <hr class="card-title-color"><br>
+
+    <div class="card card-bg mx-auto " style="width: 85%">
+        <div class="card-body">
+            <h5 class="card-title card-title-color">Trending Post Graduate Programs</h5>
+            <p class="card-text card-text-color"> Artificial Intelligence Course | Cloud Computing Certification Course
+                | Full Stack Web Development Course | PG in Data Science | MS in Artificial Intelligence | Product
+                Management Certification Course | Blockchain Course | Machine Learning Course | Cyber Security Course in
+                India | Project Management Certification Course | Cyber Security Certification Course | Lean Six Sigma
+                Certification Course | Data Analytics Program | AI and ML Course | Business Analysis Certification
+                Course</p>
+        </div>
+    </div><br>
+    <div class="card card-bg mx-auto " style="width: 85%">
+        <div class="card-body">
+            <h5 class="card-title card-title-color">Trending Master Programs</h5>
+            <p class="card-text card-text-color">PMP Plus Certification Training Course | Data Science Certifiation
+                Course | Data Analyst Course | Masters in Artificial Intelligence | Cloud Architect Certification
+                Training Course | DevOps Engineer Certification Training Course | Digital Marketing Course | Cyber
+                Security Expert Course | MEAN Stack Developer Course | Business Analyst Course</p>
+        </div>
+    </div><br>
+
+    <div class="card card-bg mx-auto" style="width: 85%">
+        <div class="card-body">
+            <h5 class="card-title card-title-color">Trending Courses</h5>
+            <p class="card-text card-text-color">PMP Certification Training Course | CSM Certification Course | Data
+                Science with Python Course | TOGAF Certification Course | ITIL 4 Foundation Certification Training
+                Course | CISSP Certification Training | Big Data Hadoop Course</p>
+        </div>
+    </div><br>
+
+    <div class="card card-bg mx-auto " style="width:85%">
+        <div class="card-body">
+            <h5 class="card-title card-title-color">Trending Resources</h5>
+            <p class="card-text card-text-color">Python Tutorial | JavaScript Tutorial | Java Tutorial | Angular
+                Tutorial | Node.js Tutorial | Docker Tutorial | Git Tutorial | Kubernetes Tutorial | Power BI Tutorial |
+                CSS Tutorial</p>
+        </div>
+    </div><br>
+
+    <div class="card card-bg mx-auto text-center " style="width:85%">
+        <div class="card-body">
+            <h5 class="card-title card-title-color"><a class="navbar-brand"
+                    href="https://www.simplilearn.com/terms-and-conditions#terms-of-use">Terms of Use</a> &nbsp;|&nbsp;
+                <a class="navbar-brand" href="https://www.simplilearn.com/terms-and-conditions#privacy-policy">Privacy
+                    Policy</a> &nbsp;|&nbsp; <a class="navbar-brand"
+                    href="https://www.simplilearn.com/terms-and-conditions#refund-policy">Refund Policy</a>&nbsp;
+                |&nbsp; <a class="navbar-brand"
+                    href="https://www.simplilearn.com/terms-and-conditions#rescheduling-policy">Reschedule Policy</a>
+                &nbsp;| &nbsp; <a class="navbar-brand" href="https://en.wikipedia.org/wiki/India">Country</a>
+            </h5>
+            <p class="card-text card-text-color">Address: NALANDA 53/1 C, Manoj Arcade, 24th Main Rd, Sector 2, HSR
+                Layout, Bengaluru - 560102, Karnataka, India.Phone No:1800-212-7688<br><span
+                    style="font-size: 12px;">&#169;2009-2023 - Simplilearn Solutions. All Rights Reserved. The
+                    certification names are the trademarks of their respective owners.</span></p>
+        </div>
+    </div>
+</div>
+</div>
+
+</html>
